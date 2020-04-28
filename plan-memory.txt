@@ -1,0 +1,22 @@
+MEMORY - plan
+
+Afficher tableau 24 cartes
+
+/*Design des cartes*/
+
+Disposer les cartes de manière aléatoire
+
+Tirer une carte
+
+Puis une deuxième
+
+	-> SI identiques : elles restent affichées ou disparaissent
+	-> SINON on les retourne.
+
+SI toutes les paires sont trouvées -> relance le jeu.
+
+En + :
+
+Memory de 36 cartes
+Mode multijoueur
+Score
