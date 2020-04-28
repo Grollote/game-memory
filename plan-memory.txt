@@ -8,6 +8,8 @@ Disposer les cartes de manière aléatoire
 
 Tirer une carte
 
+/*Grossir la carte quand on clique dessus*/
+
 Puis une deuxième
 
 	-> SI identiques : elles restent affichées ou disparaissent

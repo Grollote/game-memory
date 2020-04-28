@@ -1,7 +1,17 @@
 <script>
 //Variables//
 
-    var pairCards=[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10];
+    var memory=[];
+    var element="";
+    var stroke = 0;
+    var card=[];
+    
 
 
+//Functions//
+
+function start(){
+
+
+}
 </script>
