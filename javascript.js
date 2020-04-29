@@ -10,37 +10,42 @@ var card=[];
 
 //Functions//
 
+
+document.addEventListener('click', function(e){
+     
+});
+start();
+
 function start(){
     genererCartes(24); // Afficher tableau 24 cartes
     melangerCartes(deck); // shuffle
-    afficherCartes(); // Disposer les cartes de manière aléatoire
+    afficherCartes();
+    console.log(deck)//afficherCartes(); Disposer les cartes de manière aléatoire//
 }
 function genererCartes(nb_cartes) {
-    deck=['img-alt1.png','img-alt1.png','img-alt2.png','img-alt2.png','img-alt3.png','img-alt3.png','img-alt4.png','img-alt4.png',
-    'img-alt5.png','img-alt5.png','img-alt6.png','img-alt6.png','img-alt7.png','img-alt7.png','img-alt8.png','img-alt8.png',
-    'img-alt9.png','img-alt9.png','img-alt10.png','img-alt10.png','img-alt11.png','img-alt11.png','img-alt12.png','img-alt12.png',]
-   // deck = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12];//
+    for (let index = 1; index <= 12; index++) {
+        deck.push('img-alt'+index+'.png');
+        deck.push('img-alt'+index+'.png');
+    }
+    
 }
-function melangerCarte(card){
-    var j=0;
+function melangerCartes(card){
     var temp=null;
-    for (var i =0; i>card.length; i++){
+    for (var i =0; i<card.length; i++){
         var alea = Math.floor (Math.random () * (i+1));
         temp=card[i];
-        card[i]=alea[j];
-        alea[j]=temp;
-        }
-    
+        card[i]=card[alea];
+        card[alea]=temp;
+    }
 }
 function retournerCartes() {
 
 }
-function afficheCartes() {
+function afficherCartes() {
     var board = document.getElementById('board');
     // ... sur mon tableau aléatoire
-    board.innerHtml += <img id='myimg' src='pictures/card-back.png' data-alt-img='pictures/img-alt2.png'/>;
-    // ...
+    var card = document.getElementById('deck').getAttribute(data-alt-img);
 
-    
+   board.innerHtml += "<img id='img' src='pictures/card-back.png' data-alt-img='pictures/img-alt2.png'/>";
     
 }
