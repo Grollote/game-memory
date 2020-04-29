@@ -1,18 +1,21 @@
+.main{
+    background-image:url(../pictures/background.jpg);
+    background-repeat: repeat;
+}
 h1{
     font-family: 'Bungee Inline', cursive;
+    color: white;
     text-align:center;
-
-    
+    text-shadow: rgb(239, 143, 252) 1px 1px,  rgb(239, 143, 252) -1px 1px,  rgb(239, 143, 252) -1px -1px,  rgb(239, 143, 252) 1px -1px;
 }
 .board-game{
     border-radius: 30px;
     border-color: darkorchid;
-    display: block;
-    background-color: rgb(252, 143, 197);
-    margin-left: auto;
-    margin-right:auto;
+    background-color: rgba(252, 143, 197, 0.74);
     padding-top: 2%;
     padding-bottom: 1%;
+    margin-left: 5%;
+    margin-right:5%;
 }
 img{
     display: block;
@@ -22,11 +25,11 @@ img{
     padding-bottom: 2%;
     width:38%;
     height: auto;
-
   
 }
 
 .result{
     font-family:'Exo 2', sans-serif;
+    color: white;
     text-align:center;
 }
