@@ -16,28 +16,28 @@ var p1, p2;
 var timer = null;
 
 
-for(let i =0; i < pictures.length; i++){
+for(let i =0; i < pictures.length; i++){ // boucle qui permet de récupérer toutes mes images répondant au nom 'img-alt().png'
     pictures[i].src2 = 'pictures/img-alt' + a[i] + '.png';
 }
 
 document.addEventListener('click',function(e){
     switch(step){
-        case 1 :
+        case 1 : //premier click
             if (e.target.tagName=='IMG'){
                 e.target.src = e.target.src2;
                 p1 = e.target;
                 step = 2;
             }
             break;
-        case 2 :
+        case 2 ://deuxième click
             if (e.target.tagName=='IMG'){
                 e.target.src = e.target.src2;
                 p2 = e.target;
                 step = 3;
             }
-            timer = setTimeout(check, 1500);
+            timer = setTimeout(check, 1700);
             break;
-        case 3 :
+        case 3 : //click suivant, n'importe où
             clearTimeout(timer);
             check();
             break;
@@ -45,23 +45,24 @@ document.addEventListener('click',function(e){
 });
 
 function check(){
-    if (p1.src2==p2.src2){
-        p1.replaceWith(document.createElement('span'))
+    if (p1.src2==p2.src2){//bonne paire
+        p1.replaceWith(document.createElement('span'))//la carte disparaît
         p2.replaceWith(document.createElement('span'))
-        score += 50;
+        score += 50;//gain de 50 pts
     }
     else{
-        p2.src = p1.src = 'pictures/img-alt0.png';
+        p2.src = p1.src = 'pictures/img-alt0.png'; //mauvaise paire, on laisse le dos des cartes
         score = Math.max(0, score-30);//perte de 30 pts lorsqu'il s'agit d'une mauvaise paire//
     }
     step = 1;
     eltScore.textContent = score ;
-    if (document.getElementsByTagName('img').length==0){
-        eltScore.textContent += " You win !";
+    if (document.getElementsByTagName('img').length==0){//lorsque toutes les images du tableau ont été prises, alors c'est gagné
+        eltScore.textContent += " You win !";//message de victoire
         location.reload()//relance le jeu
     }
 }
 
+//pour lancer la musique pendant la partie
 function playAudio() {
     music.play(); 
   } 
