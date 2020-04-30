@@ -4,11 +4,10 @@ Afficher tableau 24 cartes
 
 /*Design des cartes*/
 
+
 Disposer les cartes de manière aléatoire
 
 Tirer une carte
-
-/*Grossir la carte quand on clique dessus*/
 
 Puis une deuxième
 
@@ -17,8 +16,13 @@ Puis une deuxième
 
 SI toutes les paires sont trouvées -> relance le jeu.
 
-En + :
 
+En + :
+Score
+Musique lorsque qu'il s'agit d'un groupe / chanteur (~possibilité d'écouter Aaliyah)
+
+A faire :
 Memory de 36 cartes
 Mode multijoueur
-Score
+/*Grossir la carte quand on clique dessus*/
+Afficher 'win' à la place du <span>

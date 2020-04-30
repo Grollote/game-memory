@@ -9,55 +9,49 @@
 </head>
 <body>
 
-<div class="main">
+    <div class="main">
+        <h1>WELCOME ON THIS MEMORY GAME</h1>
 
-    <h1>Welcome on this Memory Game</h1>
+        <audio id="myAudio">
+            <source src="../sound/aaliyah-try-again.mp3" type="audio/mpeg">
+          </audio>
+        
+        <div class="son">
+            <button onclick="playAudio()" type="button">Play</button>
+            <button onclick="pauseAudio()" type="button">Pause</button>
+        </div>
 
-    <div class="board-game">
+        <p>Score : <span id='score'>0</span></p>
 
-        <table id="board">
-            <tr>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-            </tr>
-            <tr>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-            </tr>
-            <tr>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-            </tr>
-            <tr>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-                <td><img src="pictures/card-back.png"/></td>
-            </tr>
-        </table>
-
+        <div id="memory">
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+            <img class="back" src="pictures/img-alt0.png"/>
+        </div>
     </div>
+    
 
-
-    <div class="result">
-        Your score is :
-    </div>
-
-</div>
 </body>
 <script type="text/javascript" src="javascript.js"></script><!--lien intégration du Javascript-->
 </html>
